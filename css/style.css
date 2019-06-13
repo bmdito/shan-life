@@ -1,0 +1,26 @@
+body {
+    background-color:pink;
+}
+
+.container {
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:25px 150px auto;
+}
+
+.drop-down-nav {
+    position:relative;
+    cursor:pointer;
+
+}
+
+.drop-down-content {
+    display:none;
+    background-color:gray;
+    position:absolute;
+    z-index:1;
+}
+
+.drop-down-nav:hover .drop-down-content {
+    display:block;
+    cursor:pointer;
+}
