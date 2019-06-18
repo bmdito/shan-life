@@ -1,25 +1,27 @@
 body {
    height:100%;
+   font-family: 'Radley', serif;
 }
 
-#main-head {
-    font-size: 40px;
-    grid-column: 1 / 4;
-
-}
 
 .container {
     display:grid;
     grid-template-columns:1fr 3fr 1fr;
 }
 
+#main-head {
+    font-size: 40px;
+    grid-column: 1 / 4;
+   
+}
+
 #navbar {
    grid-column: 1 / 4;
    height:45px;
-   font-size:22px;
+   font-size:19px;
    display:flex;
    justify-content:center;
-   background-color:rgb(209, 205, 205);
+   background-color:rgb(238, 234, 234);
    
 }
 
@@ -29,10 +31,14 @@ body {
     letter-spacing:.2em;
     display:block;
     padding:12px;
-    padding-left:20px;
+    padding-left:40px;
     text-decoration: none;
+    color:black;
 }
 
+#navbar a:hover {
+    background-color:rgb(233, 228, 218);
+}
 
 #section-a {
     grid-row:3;
@@ -60,5 +66,14 @@ body {
 .footer {
     grid-column:1/4;
     background-color:gray;
-    color:white;
+    color:black;
+    background: #ebe8e8;
+    font-size: 1rem;
+}
+
+.footer p {
+    float:left;
+    padding:12px;
+    justify-content:space-around;
+    
 }
