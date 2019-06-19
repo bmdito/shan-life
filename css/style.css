@@ -36,18 +36,18 @@ body {
    display:flex;
    justify-content:center;
    background-color:rgb(238, 234, 234);
-   
+   max-width:100%;
 }
 
 #navbar a {
     float:left; 
     display:flex;
     letter-spacing:.2em;
-    display:block;
     padding:12px;
     padding-left:40px;
     text-decoration: none;
     color:black;
+    
 }
 
 #navbar a:hover {
@@ -58,10 +58,13 @@ body {
 #section-a {
     grid-row:3;
     grid-column: col-start / span 12;
-   
-   
+    max-width:100%;
+    height:400px;
+    background-image:url(../images/friends.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    max-width:100%;
 }
-
 
 .photo-me{
     justify-content:center;
@@ -94,15 +97,7 @@ body {
     text-align:center;
 }
 
-#section-a .bg{
-    height:400px;
-    background-image:url(../images/friends.jpg);
-    background-size: contain;
-    background-size: cover;
-    background-repeat:no-repeat;
-   
-    
-}
+
 
 .footer {
     grid-column: col-start / span 12;
@@ -124,4 +119,37 @@ body {
     padding-bottom:2px;
     justify-content:space-around;
     
+}
+
+@media (max-width: 375px) {
+
+    #main-head {
+        font-size: 20px;
+       
+    }
+
+    #section-a {
+        background-size:contain;
+        height:240px;
+    }
+    
+
+    #navbar a {
+        padding:12px;
+        padding-left:20px;
+        font-size:12px;
+    }
+    .photo-me{
+        grid-column: col-start  / span 12;
+        display:flex;
+        justify-content: center;
+    
+    }
+
+    .about-me-text {
+        grid-column: col-start  / span 12;
+        grid-row:5;
+        font-size: 22px;
+        text-align: center;
+    }
 }
