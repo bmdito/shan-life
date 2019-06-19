@@ -12,6 +12,7 @@ body {
 #main-head {
     font-size: 40px;
     grid-column: 1 / 4;
+    text-align: center;
    
 }
 
@@ -47,6 +48,16 @@ body {
    
 }
 
+#section-a-about {
+    grid-row: 3;
+    grid-column:1/4;
+    
+}
+
+.about-me-text {
+    float:left;
+}
+
 #section-b {
     grid-column:1/4;
     font-size: 20px;
@@ -65,15 +76,20 @@ body {
 
 .footer {
     grid-column:1/4;
+    grid-row:4;
     background-color:gray;
     color:black;
     background: #ebe8e8;
     font-size: 1rem;
+    display:block;
+    
 }
 
 .footer p {
     float:left;
-    padding:12px;
+    padding-right:10px;
+    padding-top:2px;
+    padding-bottom:2px;
     justify-content:space-around;
     
 }
