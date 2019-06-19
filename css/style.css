@@ -6,19 +6,31 @@ body {
 
 .container {
     display:grid;
-    grid-template-columns:1fr 3fr 1fr;
+    /* grid-template-columns:1fr 3fr 1fr; */
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap:10px;
+}
+.container > * {
+    grid-column: col-start / span 12;
+  }
+
+#logo {
+    grid-column: col-start 1/ span 1;
+    background-color:pink;
+    display:grid;
 }
 
 #main-head {
     font-size: 40px;
-    grid-column: 1 / 4;
+    grid-column: col-start 2/ span 10;
     text-align: center;
     color:rgb(238, 173, 52);
    
 }
 
 #navbar {
-   grid-column: 1 / 4;
+   grid-column: col-start / span 12;
+   grid-row:2;
    height:45px;
    font-size:19px;
    display:flex;
@@ -28,7 +40,7 @@ body {
 }
 
 #navbar a {
-    float:left;
+    float:left; 
     display:flex;
     letter-spacing:.2em;
     display:block;
@@ -45,36 +57,39 @@ body {
 
 #section-a {
     grid-row:3;
-    grid-column: 1 / 4;
+    grid-column: col-start / span 12;
    
    
 }
 
-#section-a-about {
-    grid-row: 3;
-    grid-column:1/4;
-    
-}
 
 .photo-me{
-    grid-row:3;
-    grid-column:1/2;
+    justify-content:center;
+    grid-row:4;
+    grid-column: col-start 1 / span 3;
+
+}
+
+.photo-me img {
+    max-width:100%;
 }
 
 
 .name-head{
+   grid-column: col-start / span 12; 
+   text-align: center;
    color:black;
 }
 
 .about-me-text {
-    grid-column:2/4;
-    grid-row:3;
+    grid-column: col-start 4 / span 8;
+    grid-row:4;
     font-size: 22px;
     float:left;
 }
 
 #section-b {
-    grid-column:1/4;
+    grid-column: col-start / span 12;
     font-size: 20px;
     text-align:center;
 }
@@ -90,7 +105,7 @@ body {
 }
 
 .footer {
-    grid-column:1/4;
+    grid-column: col-start / span 12;
     grid-row:5;
     background-color:gray;
     color:black;
