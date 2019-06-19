@@ -51,7 +51,7 @@ body {
 }
 
 #navbar a:hover {
-    color:gray;
+    color:rgb(238, 173, 52);
     text-shadow: 20px 20px 0 0;
 }
 
@@ -109,6 +109,7 @@ body {
     display:block;
     position:fixed;
     bottom:0;
+    min-width:100%;
     
 }
 
@@ -121,16 +122,16 @@ body {
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 
     #main-head {
         font-size: 20px;
-       
     }
 
     #section-a {
-        background-size:contain;
         height:240px;
+        display:flex;
+        justify-content: center;
     }
     
 
@@ -149,7 +150,9 @@ body {
     .about-me-text {
         grid-column: col-start  / span 12;
         grid-row:5;
-        font-size: 22px;
+        font-size: 16px;
         text-align: center;
     }
+
+    
 }
