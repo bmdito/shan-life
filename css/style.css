@@ -13,6 +13,7 @@ body {
     font-size: 40px;
     grid-column: 1 / 4;
     text-align: center;
+    color:rgb(238, 173, 52);
    
 }
 
@@ -38,7 +39,8 @@ body {
 }
 
 #navbar a:hover {
-    background-color:rgb(233, 228, 218);
+    color:gray;
+    text-shadow: 20px 20px 0 0;
 }
 
 #section-a {
@@ -54,7 +56,20 @@ body {
     
 }
 
+.photo-me{
+    grid-row:3;
+    grid-column:1/2;
+}
+
+
+.name-head{
+   color:black;
+}
+
 .about-me-text {
+    grid-column:2/4;
+    grid-row:3;
+    font-size: 22px;
     float:left;
 }
 
@@ -76,12 +91,14 @@ body {
 
 .footer {
     grid-column:1/4;
-    grid-row:4;
+    grid-row:5;
     background-color:gray;
     color:black;
     background: #ebe8e8;
     font-size: 1rem;
     display:block;
+    position:fixed;
+    bottom:0;
     
 }
 
