@@ -55,6 +55,22 @@ body {
     text-shadow: 20px 20px 0 0;
 }
 
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
 #section-a {
     grid-row:3;
     grid-column: col-start / span 12;
@@ -89,6 +105,7 @@ body {
     grid-row:4;
     font-size: 22px;
     float:left;
+    line-height: 40px;
 }
 
 #section-b {
