@@ -83,6 +83,7 @@ body {
 }
 
 .photo-me{
+    
     justify-content:center;
     grid-row:4;
     grid-column: col-start 1 / span 3;
