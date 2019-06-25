@@ -234,5 +234,8 @@ input[type=text], select, textarea {
         text-align: center;
     }
 
+    .cont-form {
+        grid-column: col-start 1 / span 12;
+    }
     
 }
