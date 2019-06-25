@@ -3,6 +3,10 @@ body {
    font-family: 'Radley', serif;
 }
 
+div {
+    display:grid;
+}
+
 
 .container {
     display:grid;
@@ -56,6 +60,7 @@ body {
 }
 
 .content {
+   
     padding: 16px;
   }
   
@@ -85,7 +90,7 @@ body {
 .photo-me{
     
     justify-content:center;
-    grid-row:4;
+    grid-row:3;
     grid-column: col-start 1 / span 3;
 
 }
@@ -103,16 +108,19 @@ body {
 
 .about-me-text {
     grid-column: col-start 4 / span 8;
-    grid-row:4;
+    grid-row:3;
     font-size: 22px;
+    padding-left:20px;
     float:left;
     line-height: 40px;
 }
 
 #section-b {
+    grid-row:4;
     grid-column: col-start / span 12;
     font-size: 20px;
     text-align:center;
+    padding-bottom:40px;
 }
 
 
