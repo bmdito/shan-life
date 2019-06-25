@@ -7,6 +7,10 @@ div {
     display:grid;
 }
 
+form {
+    display:grid;
+}
+
 
 .container {
     display:grid;
@@ -62,6 +66,7 @@ div {
 .content {
    
     padding: 16px;
+    margin-bottom:40px;
   }
   
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -123,6 +128,52 @@ div {
     padding-bottom:40px;
 }
 
+/* contact form */
+
+.cont-form {
+    grid-column: col-start 3 / span 8;
+}
+
+.cont-head {
+    text-align:center;
+    
+}
+.form-style {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+    margin-bottom:40px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-decoration: none;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:80px;
+    text-decoration: none;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
 
 
 .footer {
@@ -137,12 +188,14 @@ div {
     bottom:0;
     min-width:100%;
     padding-top:10px;
+    font-weight:bold;
+    
     
 }
 
 .footer p {
     float:left;
-    padding-right:10px;
+    padding-right:40px;
     padding-top:2px;
     padding-bottom:2px;
     justify-content:space-around;
