@@ -120,12 +120,27 @@ form {
     line-height: 40px;
 }
 
+
+/* services page  */
 #section-b {
     grid-row:4;
     grid-column: col-start / span 12;
     font-size: 20px;
     text-align:center;
     padding-bottom:40px;
+}
+
+.service-head {
+    font-size:30px;
+    color:rgb(238, 173, 52);
+}
+
+.life-content{
+    text-align: left;
+}
+
+.coach-content{
+    text-align: right
 }
 
 /* contact form */
